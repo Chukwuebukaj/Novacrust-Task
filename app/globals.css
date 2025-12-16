@@ -1,0 +1,50 @@
+@import "tailwindcss";
+:root {
+  --background: #013941;
+  --foreground: #013941;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #013941;
+    --foreground: #013941;
+  }
+} */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.custom-progress {
+  background: #013941;
+}
+
+.Toastify__progress-bar--success {
+  background: #013941; /* green-500 */
+}

@@ -1,0 +1,33 @@
+{
+  "name": "frontend_developer_take_home_assessment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "formik": "^2.4.9",
+    "libphonenumber-js": "^1.12.31",
+    "next": "16.0.10",
+    "postcss": "^8.5.6",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "react-icons": "^5.5.0",
+    "react-phone-number-input": "^3.4.14",
+    "react-toastify": "^11.0.5",
+    "tailwindcss": "^4.1.18",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.10",
+    "typescript": "^5"
+  }
+}
