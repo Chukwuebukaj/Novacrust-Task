@@ -1,3 +1,4 @@
+'use client'
 import PayReceiveCard from "../components/PayReceiveCard";
 import { Form, Formik } from "formik";
 import {
