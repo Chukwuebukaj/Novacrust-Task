@@ -27,7 +27,7 @@ export default function RootLayout({
         className={`${outfit.variable} ${outfit.className} w-screen h-screen flex items-center justify-center`}
         style={outfit.style}
       >
-        <div className="w-screen md:w-150 md:max-h-190 max-h-screen md:rounded-4xl bg-white px-5 py-10 md:px-10 md:py-15 overflow-auto">
+        <div className="w-screen md:w-150 max-h-screen md:rounded-4xl bg-white px-5 py-10 md:px-10 md:py-15 overflow-auto">
           <ToastContainer
             position="top-right"
             autoClose={3000}
