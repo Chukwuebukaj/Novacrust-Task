@@ -40,14 +40,17 @@ const Dropdown = <T,>({
   const filteredOptions = useMemo(() => {
     if (!searchValue) return updatedOptions;
     const filtered = [...updatedOptions].filter(
-      (item, index) =>
-        (!item.value && index === 0) ||
+      (item) =>
         item.value
+          .toLowerCase()
+          .trim()
+          .includes(searchValue.toLowerCase().trim()) ||
+        item.label
           .toLowerCase()
           .trim()
           .includes(searchValue.toLowerCase().trim())
     );
-    const noMatches = searchValue.length > 0 && filtered.length < 2;
+    const noMatches = searchValue.length > 0 && filtered.length < 1;
 
     if (noMatches) {
       return [

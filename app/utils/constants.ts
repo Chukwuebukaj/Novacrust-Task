@@ -18,7 +18,6 @@ import { FaBitcoin } from "react-icons/fa";
 import { FaCoins } from "react-icons/fa";
 import {
   SiTether,
-  SiKucoin,
   SiBinance,
   SiSolana,
   SiRipple,

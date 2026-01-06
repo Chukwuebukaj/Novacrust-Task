@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import PayReceiveCard from "../components/PayReceiveCard";
 import { Form, Formik } from "formik";
 import {
@@ -112,11 +112,8 @@ const CryptoToCash = () => {
                 className:
                   "border-0 font-semibold text-2xl !text-[#000E10] !p-0 !rounded-none w-3/4!",
                 onChange: (e) => {
+                  setValues({ ...values, amountReceived: 0, fiatCurrency: "" });
                   handleChange(e);
-                  setTimeout(() => {
-                    setFieldValue("amountReceived", 0);
-                    setFieldValue("fiatCurrency", "");
-                  }, 100);
                 },
               }}
               dropdownProps={{
@@ -147,14 +144,14 @@ const CryptoToCash = () => {
                 name: "fiatCurrency",
                 selectedOption: values.fiatCurrency,
                 onClickOption(option) {
-                  setFieldValue("fiatCurrency", option.value);
-                  setFieldValue(
-                    "amountReceived",
-                    convertCryptoToNaira(
+                  setValues({
+                    ...values,
+                    fiatCurrency: option.value,
+                    amountReceived: convertCryptoToNaira(
                       values.cryptoCurrency,
                       values.amountPaid
-                    )
-                  );
+                    ),
+                  });
                 },
               }}
             />
